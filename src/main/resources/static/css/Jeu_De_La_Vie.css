@@ -1,0 +1,147 @@
+body{
+    background-image: url(../images/bellesetoilesbrillantesdanscielnocturne.jpg) ;
+    overflow-x: hidden;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: flex-start;
+}
+.rouge{
+    background-color: red;
+    width: 1.5vw;
+    height: 1.5vw;
+    border: 1px solid red;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.15vw red;
+    z-index: 3;
+    margin: 0;
+    padding: 0;
+    opacity:0.9;
+}
+.blanc{
+    background-color: white;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 50%;
+    border: 1px solid white;
+    border-color: white;
+    box-shadow: 0 0 0 0.15vw white;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    opacity:0.9;
+} 
+@media (max-width: 1150px) {
+    .rouge, .blanc {
+        width: 1.2vw; 
+        height: 1.2vw;  
+        margin-bottom: -2vw;
+        margin-top: -2vw;      
+    }
+}
+#champ {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+a{
+    color:white ;
+}
+fieldset{
+    color: white;
+}
+#pnglargeur{
+    margin-left: 2vw;
+}
+#boutonrègles{
+    scale: 1.4;
+    margin-top: 2vw;
+}
+#jumpDiv{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+p{
+    color: white;
+    margin-right: 4px;
+    margin-left: 8px;
+}
+#exterminatus{
+    margin-right: 4px;
+    margin-left: 20px;
+}
+#star{
+    color: white;
+    font-size: xx-large;
+    position: absolute;
+}
+.underline{
+    text-decoration: underline;
+}
+h2{
+    color: white;
+}
+#sound{
+    display: flex;
+    margin-left: 85%;
+}
+h1 {
+    font-size: 36px; /* Taille de police (ajustez selon vos préférences) */
+    border-radius: 10px; /* Bords plus arrondis (ajustez selon vos préférences) */
+    background: linear-gradient(to left, white 50%, red); /* Dégradé de 75% blanc à rouge */
+    -webkit-background-clip: text; /* Pour appliquer le dégradé au texte seulement (pour les navigateurs WebKit) */
+    color: transparent; /* Rendre le texte transparent pour voir le dégradé en arrière-plan */
+    transition: background 0.5s; /* Animation de transition pour le dégradé (ajustez selon vos préférences) */
+}
+#connecter{
+    margin-top: 2.2vw;
+}
+.bouton{
+    scale: 1.2;    
+}
+.bouton img{
+    transition: all 0.4s;
+}
+.bouton img:hover{
+    transform: scale(1.1);
+    
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      width: 80px;
+      -webkit-appearance: none;
+      background-color: #f9f8fb;
+    }
+    
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 10px;
+      -webkit-appearance: none;
+      color: #bb1313;
+      margin-top: -1px;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 10px;
+      /* cursor: ew-resize; */
+      background: #ff0202;
+      border: 1px solid red;
+      border-radius: 50%;
+      box-shadow: 0 0 0 0.15vw red;
+      box-shadow: -80px 0 0 80px #ff5353e6;
+    }
+
+}   

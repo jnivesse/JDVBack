@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Jeu_De_La_Vie.css">
+    <title>Jeu de la vie</title>
+
+</head>
+<body>
+    <header>
+        <a href="../Formulaire.html" id="connecter">se connecter </a>
+        <h1>Le jeu de la vie</h1>
+        <div>
+            <!-- <a href="regles.html" > règles du jeu</a> -->
+            <a href="../regles.html" class="bouton"  > <img src="../images/règles.png" alt="règles" id="boutonrègles"></a>
+        </div>
+        
+    </header>
+    <div id="champ">           
+        <!-- <p>hauteur: </p> -->
+        <img src="../images/hauteur.png" alt="hauteur">
+        <input type="range" id="hauteur" min="10" max="63" step="1" value="10">
+        <!-- <p>largeur: </p> -->
+        <img src="../images/largeur.png" alt="largeur" id="pnglargeur">
+        <input type="range" id="largeur" min="10" max="63" step="1" value="10">        
+    </div> <br>
+    <div id="jumpDiv">
+        <div id="jump" class="bouton"><img src="../images/jump.png" alt="saute" ></div>
+        <div id="exterminatus" class="bouton"><img src="../images/exterminatus.png" alt="effacer la grille"></div>
+        <div id="cliqueButton" class="bouton"><img src="../images/lecture.png" alt="vitesse de lecture"></div>
+        
+    </div>   
+    <div id="container">        
+    </div>
+    <div>
+        <p id="star">.</p>
+    </div> 
+    <script src="../js/starLight.js"></script>
+    <script src="../js/Jeu_De_La_Vie.js"></script>
+</body>
+</html>
